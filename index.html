@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Santiago Silva — NYC Server and Hospitality Professional">
+<title>Santiago Silva | Hospitality Professional</title>
+<style>
+:root{
+  --ink:#171717; --muted:#666; --cream:#f6f3ed; --paper:#fff;
+  --line:#dedbd4; --accent:#8b6f47;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{color:inherit}
+.container{width:min(1080px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(246,243,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Georgia,serif;font-size:20px;letter-spacing:.5px}
+.nav-links{display:flex;gap:25px;font-size:14px;color:#444}
+.nav-links a{text-decoration:none}
+.hero{padding:105px 0 90px;background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--accent);font-weight:700}
+h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,82px);line-height:.98;font-weight:400;margin:18px 0 25px}
+.hero p{font-size:19px;color:var(--muted);max-width:650px}
+.cta{display:inline-block;margin-top:20px;background:var(--ink);color:#fff;padding:13px 21px;text-decoration:none;font-size:14px}
+.profile-card{background:#e8e3da;min-height:390px;display:flex;align-items:center;justify-content:center;position:relative}
+.profile-card span{font-family:Georgia,serif;font-size:105px;color:#b3aa9b}
+section{padding:85px 0}
+.section-title{font-family:Georgia,serif;font-size:42px;font-weight:400;margin:0 0 15px}
+.lead{color:var(--muted);max-width:720px}
+.about{background:var(--cream)}
+.experience{background:var(--paper)}
+.timeline{margin-top:45px;border-top:1px solid var(--line)}
+.job{display:grid;grid-template-columns:190px 1fr;gap:45px;padding:30px 0;border-bottom:1px solid var(--line)}
+.job-date{font-size:13px;color:var(--muted)}
+.job h3{margin:0 0 5px;font-family:Georgia,serif;font-size:25px;font-weight:400}
+.job-company{color:var(--accent);font-weight:700;margin-bottom:10px}
+.job p{margin:0;color:#555}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:40px}
+.skill{background:var(--paper);padding:25px}
+.skill h3{font-family:Georgia,serif;font-weight:400;margin:0 0 8px;font-size:20px}
+.skill p{margin:0;color:var(--muted);font-size:14px}
+.contact{background:#171717;color:#fff}
+.contact .lead{color:#bbb}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:35px}
+.contact-item{border-top:1px solid #444;padding-top:15px}
+.contact-item small{display:block;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.contact a{text-decoration:none}
+footer{background:#111;color:#888;padding:22px 0;font-size:12px}
+@media(max-width:760px){
+ .hero-grid,.contact-grid{grid-template-columns:1fr}
+ .hero{padding:75px 0}
+ .profile-card{min-height:240px}
+ .job{grid-template-columns:1fr;gap:8px}
+ .skills-grid{grid-template-columns:1fr}
+ .nav-links{gap:12px;font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">Santiago Silva</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">New York City · Hospitality</div>
+      <h1>Service with attention to detail.</h1>
+      <p>
+        Server and hospitality professional with experience in upscale and
+        high-volume dining environments. Focused on thoughtful guest service,
+        menu knowledge, smooth service flow, and creating memorable dining experiences.
+      </p>
+      <a class="cta" href="#contact">Get in touch</a>
+    </div>
+    <div class="profile-card" aria-label="Profile photo placeholder">
+      <span>SS</span>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="eyebrow">About</div>
+    <h2 class="section-title">A guest-first approach.</h2>
+    <p class="lead">
+      My hospitality background combines upscale table service, high-volume
+      restaurant operations, and customer-facing experience. I bring a calm,
+      professional presence to the floor, communicate clearly with guests and
+      teammates, and pay close attention to timing, presentation, and service details.
+    </p>
+  </div>
+</section>
+
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="eyebrow">Experience</div>
+    <h2 class="section-title">Hospitality experience</h2>
+    <div class="timeline">
+
+      <article class="job">
+        <div class="job-date">Dec 2023 – Sep 2026</div>
+        <div>
+          <h3>Server</h3>
+          <div class="job-company">Grandpha Thai Restaurant · New York, NY</div>
+          <p>Provided attentive, knowledgeable table service in a high-volume Thai restaurant while coordinating with the kitchen and front-of-house team to maintain smooth service and food quality.</p>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="job-date">Mar 2021 – Dec 2023</div>
+        <div>
+          <h3>Server</h3>
+          <div class="job-company">Tán by Chef Richard Sandoval · New York, NY</div>
+          <p>Delivered upscale dining service with strong menu knowledge, wine-pairing awareness, personalized guest engagement, course timing, and polished table maintenance.</p>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="job-date">Additional experience</div>
+        <div>
+          <h3>Restaurant Operations</h3>
+          <div class="job-company">NYC Hospitality</div>
+          <p>Experience supporting high-volume service, food preparation, station organization, food safety, POS transactions, tray service, and team communication.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="about">
+  <div class="container">
+    <div class="eyebrow">Skills</div>
+    <h2 class="section-title">What I bring to the floor.</h2>
+    <div class="skills-grid">
+      <div class="skill"><h3>Guest Experience</h3><p>Attentive service, professional communication, personalized recommendations, and strong guest relationships.</p></div>
+      <div class="skill"><h3>Table Service</h3><p>Three-plate carrying, tray carrying, tableside service, course timing, table maintenance, and efficient order execution.</p></div>
+      <div class="skill"><h3>Beverage Service</h3><p>Menu and beverage knowledge with practical experience discussing wine and pairing options.</p></div>
+      <div class="skill"><h3>High-Volume Service</h3><p>Comfortable working quickly while maintaining accuracy, presentation, and communication with the team.</p></div>
+      <div class="skill"><h3>POS & Payments</h3><p>POS transactions, cash handling, order accuracy, and customer-facing technology.</p></div>
+      <div class="skill"><h3>Teamwork</h3><p>Clear communication with servers, runners, kitchen staff, managers, and other front-of-house teammates.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h2 class="section-title">Let's connect.</h2>
+    <p class="lead">Available for server and hospitality opportunities in New York City.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <small>Email</small>
+        <a href="mailto:santiagosilva091003@gmail.com">santiagosilva091003@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <small>Phone</small>
+        <a href="tel:+17866946537">+1 786 694 6537</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Santiago Silva · New York City Hospitality</div>
+</footer>
+
+</body>
+</html>
